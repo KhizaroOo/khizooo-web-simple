@@ -109,17 +109,19 @@ function Generate_Arts_Gallery()
 
         $("#Art-Shuffle-Wrapper").empty().append(HTML);
 
-        // Shuffle js filter and masonry
-        var Shuffle = window.Shuffle;
-        var jQuery = window.jQuery;
+            setTimeout(() => { 
+                // Shuffle js filter and masonry
+                var Shuffle = window.Shuffle;
+                var jQuery = window.jQuery;
 
-        var ArtShuffle = new Shuffle(document.querySelector('#Art-Shuffle-Wrapper'), { itemSelector: '.shuffle-item', buffer: 1 });
-        jQuery('input[name="shuffle-filter-art"]').on('change', function (evt) {
-            var input = evt.currentTarget;
-            if (input.checked) {
-                ArtShuffle.filter(input.value);
-            }
-        });
+                var ArtShuffle = new Shuffle(document.querySelector('#Art-Shuffle-Wrapper'), { itemSelector: '.shuffle-item', buffer: 1 });
+                jQuery('input[name="shuffle-filter-art"]').on('change', function (evt) {
+                    var input = evt.currentTarget;
+                    if (input.checked) {
+                        ArtShuffle.filter(input.value);
+                    }
+                });
+            }, 1000);
 
     });
 }
