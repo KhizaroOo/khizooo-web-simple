@@ -23,8 +23,8 @@
     <!-- Common META -->
     <meta name="author" content="KhizoOo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="KhizoOo-Theme-01" content="KhizoOo" />
-    <link rel="icon" type="image/png" href="Favicons/favicon-16.png" />
+    <meta name="KhizoOo-Theme" content="KhizoOo" />
+    <link rel="icon" type="image/png" href="https://khizarooo.github.io/khizooo-web-simple/wwwroot/Favicons/favicon-16.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="robots" content="index, follow">
@@ -393,6 +393,28 @@
     <!-- MAIN JS -->
     <link  href="https://khizarooo.github.io/khizooo-web-simple/wwwroot/js/script.js" rel="stylesheet">
     <!-- MAIN JS -->
+
+
+    <!-- CUSTOM JS -->
+    <script>
+      $(document).ready(function () {
+          $.getJSON("your-json-file.json", function (data) {
+              // 'data' now contains the JSON data
+              // You can filter items based on criteria
+
+              // Find all items with "Type" equal to "Art"
+              var artItems = data.filter(function (item) {
+                  return item.Type === "Art";
+              });
+
+              // Display the found items
+              artItems.forEach(function (artItem) {
+                  $("#output").append("<p>" + artItem.Heading + "</p>");
+              });
+          });
+      });
+  </script>
+  <!-- CUSTOM JS -->
 
   </body>
 </html>
