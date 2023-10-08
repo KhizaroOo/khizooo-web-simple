@@ -16,9 +16,6 @@
     'use strict';
 
     // GENERAL
-    var Shuffle = window.Shuffle;
-    var jQuery = window.jQuery;
-    
 
     { // Animate On Scroll Library
 
@@ -69,8 +66,6 @@
         var jQuery = window.jQuery;
 
         var ArtShuffle = new Shuffle(document.querySelector('#Art-Shuffle-Wrapper'), { itemSelector: '.shuffle-item', buffer: 1 });
-        // var WritingShuffle = new Shuffle(document.querySelector('#Infographic-Shuffle-Wrappers'), { itemSelector: '.shuffle-item', buffer: 1 });
-
         jQuery('input[name="shuffle-filter-art"]').on('change', function (evt) {
             var input = evt.currentTarget;
             if (input.checked) {
@@ -78,7 +73,7 @@
             }
         });
 
-
+        // var WritingShuffle = new Shuffle(document.querySelector('#Infographic-Shuffle-Wrappers'), { itemSelector: '.shuffle-item', buffer: 1 });
         //jQuery('input[name="shuffle-filter-infographic"]').on('change', function (evt) {
         //    var input = evt.currentTarget;
         //    if (input.checked) {
