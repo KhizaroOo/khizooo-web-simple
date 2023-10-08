@@ -1,1 +1,0 @@
-# khizooo-web-simple
