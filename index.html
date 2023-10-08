@@ -264,29 +264,8 @@
                 </div>
             </div>
 
-            <div id="Art-Shuffle-Wrapper" class="shuffle-wrapper-art row shuffle-wrapper portfolio-gallery">
-
-                        <div class="col-lg-2 col-md-2 col-3 mb-2 shuffle-item" data-groups="@art.DataGroup">
-                            <div class="position-relative inner-box">
-                                <div class="image position-relative">
-
-                                   <img class="img-fluid w-100 d-block" src="@art.IMG" alt="@art.Heading" title="@art.Heading" loading="lazy" decoding="async" importance="high" crossorigin="anonymous">
-                                   
-                                    <div class="overlay-box">
-                                        <div class="overlay-inner">
-
-                                            <a class="overlay-content" href="@art.URL" title="@art.Heading" target="_self">
-                                                <h5 class="mb-0">@((MarkupString)art.Title)</h5>
-                                                <p>@art.SubTitle</p>
-                                            </a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-            </div>
+            <div id="Art-Shuffle-Wrapper" class="shuffle-wrapper-art row shuffle-wrapper portfolio-gallery"> </div>
+            
         </div>
       </section>
       <!-- ART LISTING -->
@@ -317,32 +296,7 @@
                 </div>
             </div>
 
-            <div id="Infographic-Shuffle-Wrappers" class="row shuffle-wrapper portfolio-gallery">
-
-               
-                        <div class="col-lg-3 col-md-3 col-3 mb-3 shuffle-item" data-groups="@tech.DataGroup">
-                            <div class="position-relative inner-box">
-                                <div class="image position-relative ">
-
-                                        <img class="img-fluid w-100 d-block" src="@tech.List_IMG_URL" alt="@tech.Heading" title="@tech.Heading" loading="lazy" decoding="async" importance="high" crossorigin="anonymous">
-                                 
-                                    
-                                    <div class="overlay-box">
-                                        <div class="overlay-inner">
-
-                                            <a class="overlay-content" href="@tech.URL" title="@tech.Heading" target="_self">
-                                                <h5 class="mb-0">@((MarkupString)tech.Title)</h5>
-                                                <p>@tech.SubTitle</p>
-                                            </a>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                   
-
-            </div>
+            <div id="Infographic-Shuffle-Wrappers" class="row shuffle-wrapper portfolio-gallery"> </div>
 
         </div>
       </section>
@@ -397,46 +351,7 @@
         // JSON WORK -->
         {
 
-          // ART 
-          $.getJSON("https://khizarooo.github.io/khizooo-web-simple/wwwroot/json/art.json", function (AllArts) {
-             
-            let HTML = '';  
-
-            AllArts.forEach(function (A) {
-
-                  HTML += '<div class="col-lg-2 col-md-2 col-3 mb-2 shuffle-item" data-groups="'+A.DataGroup+'">' +
-                            '<div class="position-relative inner-box">' +
-                              '<div class="image position-relative">' +
-
-                                '<img class="img-fluid w-100 d-block" src="'+A.IMG+'" alt="'+A.Heading+'" title="'+A.Heading+'" loading="lazy" decoding="async" importance="high" crossorigin="anonymous">' +
-                                          
-                                '<div class="overlay-box">' +
-                                  '<div class="overlay-inner">' +
-
-                                    '<a class="overlay-content" href="'+A.URL+'" title="'+A.Heading+'" target="_self">' +
-                                      '<h5 class="mb-0">'+A.Title+'</h5>' +
-                                      '<p>'+A.SubTitle+'</p>' +
-                                    '</a>' +
-
-                                  '</div>' +
-                                '</div>' +
-                              '</div>' +
-                            '</div>' +
-                          '</div>';
-
-              });
-
-              $("#Art-Shuffle-Wrapper").empty().append(HTML);
-
-
-          });
-          
-
-
-
         }
-
-
           
       });
   </script>
@@ -444,6 +359,7 @@
 
 
       <!-- MAIN JS -->
+      <link  href="https://khizarooo.github.io/khizooo-web-simple/wwwroot/js/custom_methods.js" rel="stylesheet">
       <link  href="https://khizarooo.github.io/khizooo-web-simple/wwwroot/js/script.js" rel="stylesheet">
       <!-- MAIN JS -->
 
