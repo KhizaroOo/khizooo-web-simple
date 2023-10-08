@@ -9,13 +9,82 @@
     OpenSea     https://opensea.io/KhizoOo_
 */
 
-
-
 (function ($) {
 
     'use strict';
 
     // GENERAL
+ 
+    // JSON WORK -->
+    {
+
+        // ART 
+        $.getJSON("https://khizarooo.github.io/khizooo-web-simple/wwwroot/json/art.json", function (AllArts) {
+            
+        let HTML = '';  
+
+        AllArts.forEach(function (A) {
+
+                HTML += '<div class="col-lg-2 col-md-2 col-3 mb-2 shuffle-item" data-groups="'+A.DataGroup+'">' +
+                        '<div class="position-relative inner-box">' +
+                            '<div class="image position-relative">' +
+
+                            '<img class="img-fluid w-100 d-block" src="'+A.IMG+'" alt="'+A.Heading+'" title="'+A.Heading+'" loading="lazy" decoding="async" importance="high" crossorigin="anonymous">' +
+                                        
+                            '<div class="overlay-box">' +
+                                '<div class="overlay-inner">' +
+
+                                '<a class="overlay-content" href="'+A.URL+'" title="'+A.Heading+'" target="_self">' +
+                                    '<h5 class="mb-0">'+A.Title+'</h5>' +
+                                    '<p>'+A.SubTitle+'</p>' +
+                                '</a>' +
+
+                                '</div>' +
+                            '</div>' +
+                            '</div>' +
+                        '</div>' +
+                        '</div>';
+
+            });
+
+            $("#Art-Shuffle-Wrapper").empty().append(HTML);
+
+        });
+
+        // ART 
+        $.getJSON("https://khizarooo.github.io/khizooo-web-simple/wwwroot/json/art.json", function (AllArts) {
+            
+            let HTML = '';  
+
+            AllArts.forEach(function (A) {
+
+                HTML += '<div class="col-lg-2 col-md-2 col-3 mb-2 shuffle-item" data-groups="'+A.DataGroup+'">' +
+                            '<div class="position-relative inner-box">' +
+                            '<div class="image position-relative">' +
+
+                                '<img class="img-fluid w-100 d-block" src="'+A.IMG+'" alt="'+A.Heading+'" title="'+A.Heading+'" loading="lazy" decoding="async" importance="high" crossorigin="anonymous">' +
+                                        
+                                '<div class="overlay-box">' +
+                                '<div class="overlay-inner">' +
+
+                                    '<a class="overlay-content" href="'+A.URL+'" title="'+A.Heading+'" target="_self">' +
+                                    '<h5 class="mb-0">'+A.Title+'</h5>' +
+                                    '<p>'+A.SubTitle+'</p>' +
+                                    '</a>' +
+
+                                '</div>' +
+                                '</div>' +
+                            '</div>' +
+                            '</div>' +
+                        '</div>';
+
+            });
+
+            $("#Art-Shuffle-Wrapper").empty().append(HTML);
+
+        });
+        
+    }
 
     { // Animate On Scroll Library
 
@@ -60,18 +129,6 @@
     }
 
     { // Images Galleery
-
-        // Shuffle js filter and masonry
-        var Shuffle = window.Shuffle;
-        var jQuery = window.jQuery;
-
-        var ArtShuffle = new Shuffle(document.querySelector('#Art-Shuffle-Wrapper'), { itemSelector: '.shuffle-item', buffer: 1 });
-        jQuery('input[name="shuffle-filter-art"]').on('change', function (evt) {
-            var input = evt.currentTarget;
-            if (input.checked) {
-                ArtShuffle.filter(input.value);
-            }
-        });
 
         // var WritingShuffle = new Shuffle(document.querySelector('#Infographic-Shuffle-Wrappers'), { itemSelector: '.shuffle-item', buffer: 1 });
         //jQuery('input[name="shuffle-filter-infographic"]').on('change', function (evt) {
