@@ -54,11 +54,9 @@
 }
 
 
-/* 
 #6593ce | Detail Headings 1st Part
 #f4e051 | Links Color, Hover Effect #F94d1d
 #f595b0 | Theme Things Color
-*/
 
 
 html {
@@ -73,7 +71,7 @@ body {
     letter-spacing: 0.166667px;
     line-height: 1.7em;
     color: #818385;
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/bcg/bcg-03.svg");
+    background-image: url("../images/bcg/bcg-03.svg");
     
 }
 
@@ -885,15 +883,15 @@ textarea.form-control {
 }
 
 .wrap-effect-2 .item:first-of-type {
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/SiteCategory/Artist-CT.png");
+    background-image: url("../images/SiteCategory/Artist-CT.png");
 }
 
 .wrap-effect-2 .item:nth-of-type(2) {
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/SiteCategory/Blockchain-CT.png");
+    background-image: url("../images/SiteCategory/Blockchain-CT.png");
 }
 
 .wrap-effect-2 .item:nth-of-type(3) {
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/SiteCategory/Color-Pallette-CT.png");
+    background-image: url("../images/SiteCategory/Color-Pallette-CT.png");
 }
 
 
@@ -904,15 +902,15 @@ textarea.form-control {
 }
 
 .wrap-effect-3 .item:first-of-type {
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/SiteCategory/DotNet-CT.png");
+    background-image: url("../images/SiteCategory/DotNet-CT.png");
 }
 
 .wrap-effect-3 .item:nth-of-type(2) {
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/SiteCategory/Code-Vault-CT.png");
+    background-image: url("../images/SiteCategory/Code-Vault-CT.png");
 }
 
 .wrap-effect-3 .item:nth-of-type(3) {
-    background-image: url("https://khizarooo.github.io/khizooo-web-simple/wwwroot/images/SiteCategory/Fonts-CT.png");
+    background-image: url("../images/SiteCategory/Fonts-CT.png");
 }
 
 
