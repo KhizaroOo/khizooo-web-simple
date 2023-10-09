@@ -61,11 +61,6 @@
                         });
                     });
                 });
-
-                debugger
-
-                document.querySelector('video').play();
-
             });
         }
         catch (E) { console.log("Progress Bar"); }
