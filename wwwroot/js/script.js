@@ -28,8 +28,6 @@
         Generate_Infographics_Gallery()
     }
 
-
-
     { // Animate On Scroll Library
 
         try
@@ -38,33 +36,6 @@
         }
         catch (E) { console.log("Animate On Scroll Library"); }
         
-    }
-
-    { // Progress Bar
-
-        try {
-            $(window).on('load', function () {
-
-                $('body').removeClass("planet");
-
-                $('.progress-bar').each(function () {
-                    var width = $(this).data('percent');
-                    $(this).css({ 'transition': 'width 3s' });
-                    $(this).appear(function () {
-                        console.log('hello');
-                        $(this).css('width', width + '%');
-                        $(this).find('.count').countTo({
-                            from: 0,
-                            to: width,
-                            speed: 3000,
-                            refreshInterval: 50
-                        });
-                    });
-                });
-            });
-        }
-        catch (E) { console.log("Progress Bar"); }
-
     }
 
     { // Images Galleery
@@ -77,6 +48,12 @@
         //    }
         //});
     }
+
+    { // LOADER
+
+        $("#FullScreenLoader").hide();
+
+    }     
 
     /* JAON WORK */
     function Generate_Arts_Gallery()
