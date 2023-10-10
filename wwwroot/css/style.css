@@ -1102,59 +1102,5 @@ textarea.form-control {
 
 /* LOADER */
 
-.FullScreen-Loader{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%); 
-}
-.FS-L-Circle{
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-color: #fcdc29;
-  border-radius: 50%;
-  animation: loading 1.5s cubic-bezier(.8, .5, .2, 1.4) infinite;
-  transform-origin: bottom center;
-  position: relative;
-}
-@keyframes loading{
-  0%{
-    transform: translateY(0px);
-    background-color: #fcdc29;
-  }
-  50%{
-    transform: translateY(50px);
-    background-color: #ef584a;
-  }
-  100%{
-    transform: translateY(0px);
-    background-color: #fcdc29;
-  }
-}
-.Circle-1{
-  animation-delay: 0.1s;
-}
-.Circle-2{
-  animation-delay: 0.2s;
-}
-.Circle-3{
-  animation-delay: 0.3s;
-}
-.Circle-4{
-  animation-delay: 0.4s;
-}
-.Circle-5{
-  animation-delay: 0.5s;
-}
-.Circle-6{
-  animation-delay: 0.6s;
-}
-.Circle-7{
-  animation-delay: 0.7s;
-}
-.Circle-8{
-  animation-delay: 0.8s;
-}
 
 /* LOADER */
